@@ -61,7 +61,7 @@ RUN mkdir -p /root/.ssh
 RUN chmod 700 /root/.ssh
 
 RUN git config --global http.sslVerify false
-RUN git clone https://gerrit.opnfv.org/gerrit/storperf ${repos_dir}/storperf
+RUN git clone https://github.com/bharath2809/test1.git ${repos_dir}/storperf
 RUN git clone https://gerrit.opnfv.org/gerrit/releng ${repos_dir}/releng
 RUN git clone http://git.kernel.dk/fio.git ${repos_dir}/fio
 RUN cd ${repos_dir}/fio && git checkout tags/fio-2.2.10
